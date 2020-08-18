@@ -7,4 +7,8 @@ Test code to reproduce error in zfit when using weighted data. Required packages
  - json
  - matplotlib
  - tensorflow
- 
+
+Code reads a toy dataset `test.root` with the angular fit variables `(costheta_D, costheta_X_VV, chi_VV)` and the sWeight branch `n_sig_sw` used to subtract background by assigning weights to each event. The code is run by doing:
+```
+python unbinned_angular_fit.py
+```
